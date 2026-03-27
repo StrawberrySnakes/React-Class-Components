@@ -12,13 +12,13 @@ const example3 = (req, res) => {
 
 const getSongs = (req, res) => {
   return res.json([
-      {
-        title: 'The Less I Know The Better',
-        artist: 'Tame Impala',
-      },
+      { artist: 'Tame Impala',title: 'The Less I Know The Better'},
+      { artist: 'Real Estate', title: 'Green Aisles'},
+      { artist: 'Beatles', title: 'Here Comes The Sun'},
     ]);
 };
 
 module.exports.example1 = example1;
 module.exports.example2 = example2;
 module.exports.example3 = example3;
+module.exports.getSongs = getSongs;
